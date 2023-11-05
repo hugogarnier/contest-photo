@@ -11,7 +11,7 @@ const links = [
   { name: "Accueil", href: "/dashboard", icon: HomeIcon },
   {
     name: "Créer un concours",
-    href: "/dashboard/create-contest",
+    href: "/dashboard/contests/create",
     icon: PlusIcon,
   },
   {
@@ -33,9 +33,9 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-nAmber-foreground hover:text-nAmber md:flex-none md:justify-start md:p-2 md:px-3 dark:bg-gray-600 dark:hover:bg-nAmber dark:hover:text-nAmber-foreground",
+              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-muted p-3 text-sm font-medium hover:bg-secondary-foreground hover:text-secondary md:flex-none md:justify-start md:p-2 md:px-3",
               {
-                "bg-nAmber-foreground text-nAmber dark:bg-nAmber dark:text-nAmber-foreground":
+                "bg-secondary-foreground text-secondary":
                   pathname === link.href,
               },
             )}

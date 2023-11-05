@@ -1,3 +1,10 @@
+import { ContestsTable } from "@/app/ui/contests/ContestsTable";
+
 export default function Page() {
-  return <p>Contest Page</p>;
+  return (
+    <>
+      <h1 className={`mb-4 text-xl md:text-2xl`}>Concours</h1>
+      <ContestsTable />
+    </>
+  );
 }
