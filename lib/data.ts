@@ -1,6 +1,6 @@
 import {unstable_noStore as noStore} from "next/cache";
 import {sql} from "@vercel/postgres";
-import {Contest, User} from "@/app/lib/definitions"; // export async function fetchRevenue() {
+import {Contest, User} from "@/prisma/definitions"; // export async function fetchRevenue() {
 
 // export async function fetchRevenue() {
 //   // Add noStore() here prevent the response from being cached.

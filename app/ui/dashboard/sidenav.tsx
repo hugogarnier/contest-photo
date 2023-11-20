@@ -22,7 +22,7 @@ export default function SideNav() {
         <form className="flex flex-row justify-between gap-2">
           <button className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-muted p-3 text-sm font-medium hover:bg-secondary-foreground hover:text-secondary md:flex-none md:justify-start md:p-2 md:px-3">
             <LogOut className="w-6" />
-            <div className="hidden md:block">Sign Out</div>
+            <div className="hidden md:block">Se déconnecter</div>
           </button>
           <ModeToggle />
         </form>

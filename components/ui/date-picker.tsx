@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Calendar as CalendarIcon } from "lucide-react";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/utils/cn";
 import { format } from "date-fns";
 import { forwardRef } from "react";
 

@@ -1,5 +1,5 @@
 import { CalendarCheck2, Camera, UserCircle, UserCog } from "lucide-react";
-import { fetchCards } from "@/app/lib/data";
+import { fetchCards } from "@/lib/data";
 
 const iconMap = {
   current: CalendarCheck2,

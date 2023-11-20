@@ -2,8 +2,6 @@ import Breadcrumbs from "@/app/ui/contests/breadcrumbs";
 import { Form } from "@/app/ui/contests/create-form";
 
 export default async function Page() {
-  // const customers = await fetchCustomers();
-
   return (
     <main>
       <Breadcrumbs

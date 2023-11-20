@@ -9,7 +9,7 @@ import {Button} from "./button";
 import {Input} from "./input";
 import {Checkbox} from "./checkbox";
 import {DatePicker} from "./date-picker";
-import {cn} from "@/app/lib/utils";
+import {cn} from "@/utils/cn";
 import {Switch} from "./switch";
 import {Textarea} from "./textarea";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "./accordion";

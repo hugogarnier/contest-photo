@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from "lucide-react";
 import { clsx } from "clsx";
-import { fetchLastContest } from "@/app/lib/data";
+import { fetchLastContest } from "@/lib/data";
 
 export default async function Contests() {
   const contest = await fetchLastContest();

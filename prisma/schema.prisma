@@ -1,0 +1,39 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model contests {
+  id           String         @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  title        String         @db.VarChar(255)
+  description  String
+  start_date   DateTime       @db.Date
+  end_date     DateTime       @db.Date
+  status       String         @db.VarChar(255)
+  archived     Boolean
+  participants participants[]
+}
+
+model participants {
+  id              String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name            String   @db.VarChar(255)
+  email           String   @db.VarChar(255)
+  image_url       String   @db.VarChar(255)
+  title           String   @db.VarChar(255)
+  score           Int
+  outside_contest Boolean
+  contest         String   @db.Uuid
+  contests        contests @relation(fields: [contest], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model users {
+  id       String @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name     String @db.VarChar(255)
+  email    String @unique
+  password String
+  role     String @db.VarChar(255)
+}

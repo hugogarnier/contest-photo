@@ -1,4 +1,4 @@
-import { ContestsTable } from "@/app/ui/contests/ContestsTable";
+import { ContestsTable } from "@/app/ui/contests/contests-table";
 
 export default function Page() {
   return (

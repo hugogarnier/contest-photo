@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import "@/app/ui/globals.css";
 import { inter } from "@/app/ui/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster />
           {children}
         </ThemeProvider>
       </body>
