@@ -16,7 +16,7 @@ export const createContest = async ({
 }: CreateContest) => {
   try {
     if (!description || !title || !start_date || !end_date)
-      throw new Error("params required");
+      return { message: "params missing", status: 400 };
     await prisma.contests.create({
       data: {
         title,
